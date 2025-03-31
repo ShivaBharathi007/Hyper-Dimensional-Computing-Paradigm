@@ -1,5 +1,7 @@
 # **HDC-Based Spam Detector**
 
+![HDC](https://github.com/user-attachments/assets/54c26d17-1964-43c0-955f-19c7e4ae759b)
+
 ## **Project Overview**
 This project implements a **Hyperdimensional Computing (HDC)-based Spam Detector** using **Python, NumPy, Pandas, and Scikit-learn**. The model classifies SMS messages as either **spam or ham (not spam)** using hyperdimensional vectors and Hamming distance for classification.
 
