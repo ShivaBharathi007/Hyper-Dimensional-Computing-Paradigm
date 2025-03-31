@@ -1,4 +1,4 @@
-# **HDC-Based Spam Detector**
+# **Hyper Dimensional Computing for NLP**
 
 ![HDC](https://github.com/user-attachments/assets/54c26d17-1964-43c0-955f-19c7e4ae759b)
 
