@@ -34,16 +34,9 @@ This project implements a **Hyperdimensional Computing (HDC)-based Spam Detector
    - **Hamming distance** (bitwise difference) is computed.
    - The class with the **smallest Hamming distance** is assigned to the message.
 
-### 4. **Why HDC is 1000x More Efficient on CPU than GPU**
-- **Binary Operations:** HDC relies on simple bitwise operations (XOR, majority vote) that are **highly parallelizable on CPUs** without requiring floating-point computations like deep learning models.
-- **No Backpropagation:** Unlike deep learning, HDC does not require gradient descent, making it much faster.
-- **Memory Efficiency:** HDC uses compact binary vectors instead of large floating-point tensors.
-- **Lightweight Computation:** Hamming distance calculations require only XOR operations and bit counting, which are significantly faster than matrix multiplications in deep learning models.
-- **Scalability on CPUs:** Modern CPUs can perform **SIMD (Single Instruction Multiple Data) operations**, accelerating HDC operations efficiently without requiring GPUs.
-
 ---
 
-## **Training the HDC Model**
+## 4. **Training the HDC Model**
 - Constructs an **item memory** for mapping n-grams to hypervectors.
 - Generates **class prototype hypervectors** for spam and ham messages.
 - Uses **Hamming distance** to classify new messages.
@@ -60,7 +53,7 @@ This project implements a **Hyperdimensional Computing (HDC)-based Spam Detector
 ## **Installation & Setup**
 ### **1. Clone the Repository**
 ```bash
-git clone https://github.com/yourusername/HDC-Spam-Detector.git
+git clone https://github.com/ShivaBharathi007/Hyper-Dimensional-Computing-Paradigm.git
 cd HDC-Spam-Detector
 ```
 
@@ -70,7 +63,7 @@ pip install numpy pandas scikit-learn
 ```
 
 ### **3. Run in Google Colab**
-- Open the **Colab Notebook**: [HDC_Spam_Detector.ipynb](https://colab.research.google.com/)
+- Open the **Colab Notebook**: [HDC_Spam_Detector.ipynb](https://colab.research.google.com/drive/1mA8ZNty5EM5jJnVHbv9gzr1miirFx001)
 - Upload `spam.csv` or modify the dataset path accordingly.
 
 ---
@@ -101,6 +94,11 @@ for msg in test_messages:
 ✅ Implement **hyperparameter tuning** for `D` and `ngram_range`.  
 
 ---
-
+### **Why HDC is 1000x More Efficient on CPU than GPU**
+- **Binary Operations:** HDC relies on simple bitwise operations (XOR, majority vote) that are **highly parallelizable on CPUs** without requiring floating-point computations like deep learning models.
+- **No Backpropagation:** Unlike deep learning, HDC does not require gradient descent, making it much faster.
+- **Memory Efficiency:** HDC uses compact binary vectors instead of large floating-point tensors.
+- **Lightweight Computation:** Hamming distance calculations require only XOR operations and bit counting, which are significantly faster than matrix multiplications in deep learning models.
+- **Scalability on CPUs:** Modern CPUs can perform **SIMD (Single Instruction Multiple Data) operations**, accelerating HDC operations efficiently without requiring GPUs.
 **Contributions are welcome!** Feel free to fork and improve the project 🚀
 
